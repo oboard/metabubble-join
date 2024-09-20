@@ -1,11 +1,9 @@
 {
-    "redirects": [
-        {
-            "source": "**",
-            "destination": "/index.html"
-        }
-    ],
     "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        },
         {
             "source": "/api/:path*",
             "destination": "http://8.219.163.85:3434/:path*"
